@@ -1,14 +1,17 @@
 package com.example.demo;
 
+import org.springframework.data.annotation.Id;
+
 public class User {
-    private int id;
+    @Id
+    private String id;
     private String name;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
